@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    overflow: auto;  /* pour resoudre le probleme de débordement */
+}
+
+body {
+    background-color: #8BA1BB;
+    font-family: Arial;
+}
+
+p.categorie {
+    background-color: black;
+    color: white;
+    display: inline-block;   /* pour encadrer le mot texte en noir */
+    /* margin-left: 30px;*/
+    margin-top: -15px;
+    padding: 8px 18px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+div.contenu {
+    background-color: white;
+    margin: 60px 10% 80px 10%;
+    padding: 0px 30px 30px 30px;
+    min-width: 350px;    /* pour eviter que les elements ne s'entremellent */
+    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.1);  /* pour mettre l'effet d'ombre */
+    overflow: visible;   /* pour mettre la recette en haut */
+}
+
+.contenu ul, ol {
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 12px;
+    margin-top: 10px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+p.description {
+    text-align: center;
+    max-width: 400px;
+    display: inline-block;    /* pour centrer le texte */
+    margin-top: 15px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.centre {
+    text-align: center;
+    width: 100%;   /* pour mettre l'image du gateau dans le rectangle blanc */
+    display: block;   /* pour bien aligner l'image */
+}
+
+div.categorie {
+    margin-bottom: 0px;   /* permet de centre le mot recette sur lentete */
+    margin-top: 0px;
+    overflow: visible;   /* pour mettre la recette en haut */
+} 
+
+div.separateur {
+    width: 100px;           /* creation du separateur */
+    height: 1px;            /* creation du separateur */
+    background-color: black;
+    margin-left: auto;   /* pour centrer le separateur */
+    margin-right: auto;     /* pour centrer le separateur */
+}
+
+div.info {
+    position: relative;
+}
+
+table.info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    background-color: #6C829DC0;
+    height: 60px;
+}
+
+table.info td {
+    text-align: center;
+    font-size: 14px;
+    vertical-align: top;
+}
+
+table.info th {
+    font-size: 16px;
+    vertical-align: bottom;
+    padding-bottom: 8px;
+}
+
+img.info {
+    display: block;
+    max-height: 400px;
+    object-fit: cover;   /* permet de stabiliser l'image à sa taille normale qd on l'aggrandi */
+    min-height: 200px;
+    background-color: lightgrey;
+}
+
+div.colonne {
+    width: 40%;    /* on reduit de 50 a 40 pour permettre un equilibre des tracés des titres */
+    margin-top: 20px;
+}
+
+div.colonne h2 {
+    text-align: center;  /* pour centrer les titres h2 */
+    text-transform: uppercase;   /* pour mettre en majiscule */
+    font-size: 15px;
+    border-bottom: 5px solid #6C829D;
+    padding-bottom: 5px;
+}
+
+div.colonne1 {
+    display: inline-block;
+    margin-right: 10%;
+}
+
+div.colonne2 {
+    float: right;
+}
+
+div.ingredients p {
+    border: 1px solid lightgray;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 4px;
+    margin-bottom: 0;
+    padding: 8px 0;
+}
+
+table.preparation p.numero {
+    background-color: #6C829D;
+    color: white;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 4px;
+    box-sizing: border-box;   /* pour maintenir le width */
+    border-radius: 50%;
+    margin: 0;
+}
+
+table.preparation td {
+    vertical-align: top;
+}
+
+table.preparation td.preparation_etape {
+    font-size: 14px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+
+table.preparation tr {
+    height: 40px;
+}
+
+
